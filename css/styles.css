@@ -1,24 +1,41 @@
 body {
-
+  background: url('http://subtlepatterns.com/patterns/grey_wash_wall.png');
+  color: #d3d3d3;
 }
-
+div.border {
+  min-height: 800px;
+}
+.container{
+  max-width: 1200px;
+}
 .clickItem,  {
   color: #0088cc;
 }
 
-.clickItem:hover{
+.clickable:hover{
   text-decoration: underline;
   cursor: pointer;
 }
-
-.col-md-5 {
-}
-
 .finishedItem {
   text-decoration:line-through;
   color:#d3d3d3;
 }
-
+#main-title{
+  text-align: center;
+}
+.separator {
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+#finish-header {
+  text-align: center ;
+  margin-top: 0px ;
+}
 .toggle-list > div {
   display: none;
+}
+
+.deletes {
+  color: red;
+  text-decoration: line-through;
 }

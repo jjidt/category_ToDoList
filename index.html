@@ -8,9 +8,9 @@
   </head>
   <body>
     <div class = "container">
-      <h1>Make a To-Do List!</h1>
+      <h1 id = "main-title">Make a To-Do List!</h1>
       <div class = 'row'>
-        <div class = 'col-md-7'>
+        <div class = 'col-md-4 border'>
           <form id='create-list'>
             <div class = 'form-group'>
               <input type = 'text' class= 'form-control' id = 'category' placeholder='Enter To-Do List Category'>
@@ -18,18 +18,24 @@
             <button type='submit' class='btn btn-info'>Create Category</button>
           </form>
 
-          <h2>Categories:</h2>
+          <h4>Categories:</h4>
           <ul id="category-list">
           </ul>
 
         </div>
-        <div class = 'col-md-5'>
+        <div class = 'col-md-4 separator border'>
           <form id='new-task'>
-            <input id='add-task' type='text' placeholder='Enter Task Here'>
+            <div class = 'form-group'>
+              <input id='add-task' class = 'form-control' type='text' placeholder='Enter Task Here'></input>
+            </div>
             <button type='submit' class='btn btn-info'>Add Task</button>
           </form>
           <div class = 'new-list'>
           </div>
+        </div>
+        <div class = 'col-md-4 border'>
+          <h2 id = "finish-header">Completed</h2>
+          <ul id = "complete-list"></ul>
         </div>
       </div>
     </div>
