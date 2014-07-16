@@ -18,3 +18,7 @@ body {
   text-decoration:line-through;
   color:#d3d3d3;
 }
+
+.toggle-list > div {
+  display: none;
+}
